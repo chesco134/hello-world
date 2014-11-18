@@ -42,7 +42,7 @@ public class IniciaConexion extends Thread {
 	private String[] opcionesVoto;
 	
 	/* el wey que andaba comentando aquí hace rato está loco, no le hagan caso. Son cositas lindas del bien =) */
-	
+	/* Aún no comprendo */
 	public IniciaConexion(String databaseHost, String[] opcionesVoto) {
 		this.databaseHost = databaseHost;
 		this.opcionesVoto = opcionesVoto;
