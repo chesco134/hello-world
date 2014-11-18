@@ -103,7 +103,7 @@ public class IniciaConexion extends Thread {
 						} else {
 							if (datos[0].equals("Participante")) {
 								synchronized (capturistas) {
-									salidaObjeto.writeObject(capturistas);
+									salidaObjeto.writeObject(capturistas);//¡Por qué! D=
 									salidaObjeto.flush();
 								}
 							} else {
