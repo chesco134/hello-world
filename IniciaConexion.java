@@ -135,11 +135,11 @@ public class IniciaConexion extends Thread {
 							ListIterator<String> iter = participantes
 									.listIterator();
 							while (iter.hasNext()) {
-								if (iter.next().contains(
+								String aux = iter.next();
+								if (aux.contains(
 										socket.getInetAddress()
 												.getHostAddress())) {
-									String[] pair = iter.previous()
-											.split(" - ");
+									String[] pair = aux.split(" - ");
 									salidaObjeto.writeUTF(pair[1]);
 									salidaObjeto.close();
 									entradaObjeto.close();
